@@ -27,8 +27,8 @@ libexpat-dev gcc-multilib g++-multilib picocom u-boot-tools util-linux unzip
 ```bash
 # WSL2 on Windows 11/10 supports WSLg for running graphical applications
 $ sudo apt install kconfig-frontends
-$ apt install python3-kconfiglib
-$ apt install python3-pyelftools
+$ sudo apt install python3-kconfiglib
+$ sudo apt install python3-pyelftools
 ```
 
 ## Toolchain - Ubuntu/WSL2
