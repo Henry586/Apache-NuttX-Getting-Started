@@ -6,7 +6,7 @@ Apache NuttX is a real-time operating system (RTOS) with an emphasis on standard
 ## Get started with Apache NuttX on Ubuntu/WSL2 (Windows)
 - Install & Setup tools required to run Apache NuttX
 - Compile and run NuttX shell called `nsh`
-- Compile and run LVGL GUI Demo on NuttX (Windows 11 required which supports graphics WSLg)
+- Compile and run LVGL GUI Demo on NuttX (Windows 11 required which supports graphics WSLg; WSL2 verified on Windows 10)
 
 ## Installing pre-requisites
 ```bash
@@ -20,15 +20,15 @@ $ sudo apt install \
 bison flex gettext texinfo libncurses5-dev libncursesw5-dev xxd \
 gperf automake libtool pkg-config build-essential gperf genromfs \
 libgmp-dev libmpc-dev libmpfr-dev libisl-dev binutils-dev libelf-dev \
-libexpat-dev gcc-multilib g++-multilib picocom u-boot-tools util-linux
+libexpat-dev gcc-multilib g++-multilib picocom u-boot-tools util-linux unzip
 ```
 
 ## Ubuntu/WSL2 config and python dependency
 ```bash
-# WSL2 on Windows 11 supports WSLg for running graphical applications
+# WSL2 on Windows 11/10 supports WSLg for running graphical applications
 $ sudo apt install kconfig-frontends
-$ pip install kconfiglib
-$ pip install pyelftools cxxfilt
+$ apt install python3-kconfiglib
+$ apt install python3-pyelftools
 ```
 
 ## Toolchain - Ubuntu/WSL2
